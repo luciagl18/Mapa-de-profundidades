@@ -1,0 +1,41 @@
+# Configuración del Análisis
+
+# Parámetros por defecto para el análisis de profundidad
+analysis:
+  # Número de niveles de precio a analizar
+  price_levels: 10
+  
+  # Distancia de precio para análisis de liquidez (porcentaje)
+  price_distance: 0.01
+  
+  # Número de bins para histogramas
+  histogram_bins: 50
+
+# Configuración de visualización
+visualization:
+  # Estilo de los gráficos
+  style: darkgrid
+  
+  # Tamaño de figura por defecto
+  figure_size:
+    width: 12
+    height: 6
+  
+  # DPI para guardar imágenes
+  dpi: 300
+  
+  # Número de niveles superiores a mostrar
+  top_n_levels: 20
+
+# Configuración de salida
+output:
+  # Directorio de salida
+  directory: output
+  
+  # Formatos de archivo
+  formats:
+    - png
+    - pdf
+  
+  # Guardar datos procesados
+  save_processed: true
